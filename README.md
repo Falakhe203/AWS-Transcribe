@@ -206,6 +206,6 @@ There are 4 methods of encrypting objects in S3
 
 
 Author:
-Falakhe.Mshubi@standardbank.co.za
+Falakhe.Mshubi@standardbank.co.za   
 Developer:
 Falakhe.Mshubi@standardbank.co.za
