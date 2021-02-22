@@ -33,7 +33,7 @@ The following AWS services will be utilized throughout this guide:
 
  - We utilize the Lambda function to start a SageMaker notebook instance. Make sure to choose an execution role that has permissions to access both Lambda and SageMaker.
 
-![alt text](Resources/Lambda_1.png)
+![alt text](Lambda_1.png)
 
 - On the Function Code, paste this code in the lambda_function.py file in your Lambda function. This code starts the specified notebook instance.   
 
@@ -59,7 +59,7 @@ def lambda_handler(event, context):
 
 - Go to Rules > Create rule.
  
-![alt text](Resources/CloudWatch.png)
+![alt text](CloudWatch.png)
 - Enter the frequency of refresh.
 - Choose the Lambda function name. This is the same function we created above.
 
@@ -68,7 +68,7 @@ def lambda_handler(event, context):
 
 On SageMaker, we will now create a lifecycle configuration for our **‘test-notebook-instance'** notebook instance. Let us call this lifecycle configuration as ‘test-lifecycle-configuration’.
 
-![alt text](Resources/Life_cycle.JPG)
+![alt text](Life_cycle.JPG)
 
 
 The Code:
@@ -100,7 +100,7 @@ This script will be run each time an associated notebook instance is started. Th
 
 After this, we connect the lifecycle configuration to our notebook instance.
 
-![alt text](Resources/test-notebook-instance.JPG)
+![alt text](test-notebook-instance.JPG)
 
 
 ## AWS SNS (Simple Notification Service) 
@@ -128,7 +128,7 @@ After the transcription scores have been generated in SageMaker, we need another
 
 - An S3 trigger invokes Lambda once the csv file containing the scores gets uploaded to a designated S3 bucket. 
 
-![alt text](Resources/trigger.JPG)
+![alt text](trigger.JPG)
 
 
 The Lambda Code:
@@ -190,7 +190,7 @@ The Lambda script does the following:
 # Architecture of the AWS Automated Transcribe Pipeline
 
 
-![alt text](Resources/AWS_Architecture.JPG)
+![alt text](AWS_Architecture.JPG)
 
 
 Author:
