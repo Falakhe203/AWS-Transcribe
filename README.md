@@ -187,18 +187,6 @@ The Lambda script does the following:
 - DynamoDB - to write the scores in a DynamoDB table.
 
 
-# Encryption
-
-There are 4 methods of encrypting objects in S3
-
- - SSE-S3: encrypts S3 objects using keys handled & managed by AWS
- - SSE-KMS: to manage encryption keys with AWS Key Management Service 
- - SSE-C: when we want to manage our own encryption keys
- - Client Side Encryption: encryption applied before data transmittion to AWS servers
-
-> In the Cognitive Services AI Team, we focus mainly on SSE-S3 and SSE-KMS
-
-
 # Architecture of the AWS Automated Transcribe Pipeline
 
 
@@ -206,6 +194,6 @@ There are 4 methods of encrypting objects in S3
 
 
 Author:
-Falakhe.Mshubi@standardbank.co.za   
+FalakheMshubi@standardbank.co.za   
 Developer:
-Falakhe.Mshubi@standardbank.co.za
+FalakheMshubi@standardbank.co.za
